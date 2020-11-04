@@ -7,7 +7,7 @@ echo "Installing brew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
 
 echo "Installing brew cask..."
-brew tap caskroom/cask
+brew tap homebrew/cask
 
 # Dev Tools
 brew install git
