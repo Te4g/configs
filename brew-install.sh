@@ -4,7 +4,7 @@
 # To execute: save and `chmod +x ./brew-install.sh` then `./brew-install.sh`
 
 echo "Installing brew..."
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
 
 echo "Installing brew cask..."
 brew tap caskroom/cask
