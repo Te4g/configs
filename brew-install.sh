@@ -14,7 +14,6 @@ brew install composer
 brew install node
 brew install yarn
 brew cask install docker
-brew cask install github
 brew cask install phpstorm
 
 # Communication Apps
