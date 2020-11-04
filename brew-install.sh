@@ -11,12 +11,18 @@ brew tap caskroom/cask
 
 # Dev Tools
 brew install git
-brew install docker
+brew install composer
+brew install node
+brew install yarn
+brew cask install docker
 brew cask install github-desktop
+brew cask install phpstorm
 
 # Communication Apps
 brew cask install slack
+brew cask install microsoft-teams
 
 # Web Tools
 brew cask install google-chrome
 brew cask install postman
+brew cask install vlc
