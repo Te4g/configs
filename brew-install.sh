@@ -28,13 +28,17 @@ brew cask install vlc
 # Custom shell
 npm install --global pure-prompt
 rm ~/.zshrc && touch ~/.zshrc
-echo 'export CLICOLOR=1' >> ~/.zshrc
-echo 'autoload -U promptinit; promptinit' >> ~/.zshrc
-echo 'prompt pure' >> ~/.zshrc
+echo '
+export CLICOLOR=1
+autoload -U promptinit; promptinit
+prompt pure
+' >> ~/.zshrc
 brew install zsh-autosuggestions
-echo  'source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
 brew install zsh-syntax-highlighting
-echo 'source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc
+echo '
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+' >> ~/.zshrc
 
 # Aliases
 echo '
