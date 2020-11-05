@@ -3,7 +3,7 @@
 # Homebrew Script for OSX
 
 echo "Installing brew..."
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)" 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "Installing brew cask..."
 brew tap homebrew/cask
@@ -26,9 +26,29 @@ brew cask install postman
 brew cask install vlc
 
 # Custom shell
-brew install starship
-touch ~/.zshrc
-echo >> eval "$(starship init zsh)"
-brew cask install font-fira-code
+npm install --global pure-prompt
+rm ~/.zshrc && touch ~/.zshrc
+echo 'export CLICOLOR=1' >> ~/.zshrc
+echo 'autoload -U promptinit; promptinit' >> ~/.zshrc
+echo 'prompt pure' >> ~/.zshrc
 brew install zsh-autosuggestions
-echo >> source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+echo  'source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh' >> ~/.zshrc
+brew install zsh-syntax-highlighting
+echo 'source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh' >> ~/.zshrc
+
+# Aliases
+echo '
+# Perform "ls" after "cd" if successful
+cdls() {
+  builtin cd "$*"
+  RESULT=$?
+  if [ "$RESULT" -eq 0 ]; then
+    ls
+  fi
+}
+alias cd="cdls"
+
+# Docker
+alias dc="docker-compose"
+alias dcbc="docker-compose exec php bin/console"
+' >> ~/.zshrc
