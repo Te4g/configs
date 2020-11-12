@@ -11,8 +11,8 @@ services:
       - AUTO_UPDATE=true #optional
       - RUN_OPTS=<run options here> #optional
     volumes:
-      - <path to data>:/config #set path
-      - <path to blackhole>:/downloads #set path
+      - ./jackett/config:/config #set path
+      - ./jackett/downloads:/downloads #set path
     ports:
       - 9117:9117
     restart: unless-stopped
@@ -26,9 +26,9 @@ services:
       - TZ=Europe/London
       - UMASK_SET=022 #optional
     volumes:
-      - /path/to/data:/config #set path
-      - /path/to/tvseries:/tv #set path
-      - /path/to/downloadclient-downloads:/downloads #set path
+      - ./sonarr/config:/config #set path
+      - ./sonarr/tvseries:/tv #set path
+      - ./sonarr/downloads:/downloads #set path
     ports:
       - 8989:8989
     restart: unless-stopped
@@ -44,9 +44,9 @@ services:
       - USER=username #optional
       - PASS=password #optional
     volumes:
-      - <path to data>:/config
-      - <path to downloads>:/downloads
-      - <path to watch folder>:/watch
+      - ./transmission/config:/config
+      - ./transmission/downloads:/downloads
+      - ./transmission/watch:/watch
     ports:
       - 9091:9091
       - 51413:51413
