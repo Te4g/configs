@@ -24,10 +24,20 @@ Créez maintenant un nouveau fichier xstartup et ouvrez-le dans votre éditeur d
 nano ~/.vnc/xstartup
 ```
 
-Les commandes de ce fichier sont exécutées automatiquement chaque fois que vous démarrez ou redémarrez le serveur VNC. Nous avons besoin que VNC démarre notre environnement de bureau s'il n'est pas déjà lancé. Ajoutez ces commandes au fichier :
+Les commandes de ce fichier sont exécutées automatiquement chaque fois que vous démarrez ou redémarrez le serveur VNC. Nous avons besoin que VNC démarre notre environnement de bureau s'il n'est pas déjà lancé. Ajoutez ces commandes au fichier `~/.vnc/xstartup` :
 ```
-~/.vnc/xstartup
-#!/bin/bash
-xrdb $HOME/.Xresources
-startxfce4 &
+#!/bin/sh
+
+# Uncomment the following two lines for normal desktop:
+unset SESSION_MANAGER
+unset DBUS_SESSION_BUS_ADDRESS
+#. /etc/X11/xinit/xinitrc
+/usr/bin/mate-session
+
+[ -x /etc/vnc/xstartup ] && exec /etc/vnc/xstartup
+[ -r $HOME/.Xresources ] && xrdb $HOME/.Xresources
+xsetroot -solid grey
+vncconfig -iconic &
+x-terminal-emulator -geometry 80x24+10+10 -ls -title "$VNCDESKTOP Desktop" &
+x-window-manager &
 ```
