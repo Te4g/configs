@@ -21,7 +21,7 @@ brew cask install slack
 brew cask install microsoft-teams
 
 # Web Tools
-brew cask install google-chrome
+brew cask install brave-browser
 brew cask install postman
 brew cask install vlc
 
