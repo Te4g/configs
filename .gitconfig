@@ -15,7 +15,7 @@
         # Commons.
         co = checkout
         cob = checkout -b
-        st = status -s
+        st = status
         c = commit
         cm = commit -m
         cam = commit -am
