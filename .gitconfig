@@ -1,0 +1,40 @@
+[filter "lfs"]
+        clean = git-lfs clean -- %f
+        smudge = git-lfs smudge -- %f
+        process = git-lfs filter-process
+        required = true
+
+[user]
+        name = Te4g
+        email = 47118498+Te4g@users.noreply.github.com
+
+[core]
+        excludesfile = ~/.gitignore
+        
+[alias]
+        # Commons.
+        co = checkout
+        cob = checkout -b
+        st = status -s
+        c = commit
+        cm = commit -m
+        cam = commit -am
+        br = branch
+
+        # Delete last commit.
+        undo = !git reset --soft HEAD~1
+
+        # Push head.
+        pushead = !git push origin HEAD
+        p = !git pushead
+        pf = !git pushead -f
+
+        # Rebase.
+        rb = "!f() { git rebase -i HEAD~$1; }; f"
+        rbc = !git rebase --continue
+        rba = !git rebase --abort
+        rbs = !git rebase --skip
+        rbmaster = !git co master && git pull && git co - && git rebase master
+
+        # Show aliases.
+        aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
