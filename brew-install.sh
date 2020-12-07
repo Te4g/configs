@@ -13,17 +13,18 @@ brew install git
 brew install composer
 brew install node
 brew install yarn
-brew cask install docker
-brew cask install phpstorm
+brew install --cask docker
+brew install --cask phpstorm
 
 # Communication Apps
-brew cask install slack
-brew cask install microsoft-teams
+brew install --cask slack
+brew install --cask microsoft-teams
 
 # Web Tools
-brew cask install brave-browser
-brew cask install postman
-brew cask install vlc
+brew install --cask brave-browser
+brew install --cask postman
+brew install --cask vlc
+brew install --cask teamviewer
 
 # Custom shell
 npm install --global pure-prompt
