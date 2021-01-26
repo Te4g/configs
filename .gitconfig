@@ -35,6 +35,9 @@
         rba = !git rebase --abort
         rbs = !git rebase --skip
         rbmaster = !git co master && git pull && git co - && git rebase master
+        
+        # Drop current changes.
+        drop = !git stash && git stash drop
 
         # Show aliases.
         aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
