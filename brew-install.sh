@@ -25,6 +25,7 @@ brew install --cask brave-browser
 brew install --cask postman
 brew install --cask vlc
 brew install --cask teamviewer
+brew install --cask mark-text
 
 # Custom shell
 npm install --global pure-prompt
