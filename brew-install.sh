@@ -27,6 +27,10 @@ brew install --cask vlc
 brew install --cask teamviewer
 brew install --cask mark-text
 
+# Ffmpeg
+brew tap homebrew-ffmpeg/ffmpeg
+brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-librsvg --with-openjpeg --with-libvmaf
+
 # Custom shell
 npm install --global pure-prompt
 rm ~/.zshrc && touch ~/.zshrc
