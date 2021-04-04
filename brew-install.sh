@@ -13,6 +13,7 @@ brew install git
 brew install composer
 brew install node
 brew install yarn
+brew install httpie
 brew install --cask docker
 brew install --cask phpstorm
 
