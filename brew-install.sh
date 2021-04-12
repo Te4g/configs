@@ -15,6 +15,7 @@ brew install node
 brew install yarn
 brew install httpie
 brew install --cask docker
+brew install --cask vagrant
 brew install --cask phpstorm
 
 # Communication Apps
