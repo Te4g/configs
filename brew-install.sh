@@ -30,6 +30,7 @@ brew install --cask teamviewer
 brew install --cask mark-text
 brew install --cask notion
 brew install --cask syncthing
+brew install --cask cakebrew
 
 # Ffmpeg
 brew tap homebrew-ffmpeg/ffmpeg
