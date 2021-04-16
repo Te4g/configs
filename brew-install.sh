@@ -14,23 +14,29 @@ brew install composer
 brew install node
 brew install yarn
 brew install httpie
+brew install serverless
 brew install --cask docker
 brew install --cask vagrant
 brew install --cask phpstorm
+brew install --cask datagrip 
 
 # Communication Apps
 brew install --cask slack
 brew install --cask microsoft-teams
 
 # Web Tools
+brew install youtube-dl
 brew install --cask brave-browser
-brew install --cask postman
+brew install --cask chromium
 brew install --cask vlc
 brew install --cask teamviewer
 brew install --cask mark-text
 brew install --cask notion
 brew install --cask syncthing
 brew install --cask cakebrew
+
+# Miscellenaous
+brew install --cask amazon-music
 
 # Ffmpeg
 brew tap homebrew-ffmpeg/ffmpeg
