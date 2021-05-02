@@ -18,7 +18,8 @@ brew install serverless
 brew install --cask docker
 brew install --cask vagrant
 brew install --cask phpstorm
-brew install --cask datagrip 
+brew install --cask datagrip
+brew install --cask powershell
 
 # Communication Apps
 brew install --cask slack
