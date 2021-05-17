@@ -5,6 +5,10 @@
 echo "Installing brew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+echo "Configuring brew..."
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$USER/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 echo "Installing brew cask..."
 brew tap homebrew/cask
 
