@@ -31,8 +31,7 @@ brew install --cask microsoft-teams
 
 # Web Tools
 brew install youtube-dl
-brew install --cask brave-browser
-brew install --cask chromium
+brew install --cask google-chrome
 brew install --cask vlc
 brew install --cask teamviewer
 brew install --cask mark-text
