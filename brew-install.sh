@@ -24,6 +24,7 @@ brew install --cask vagrant
 brew install --cask phpstorm
 brew install --cask datagrip
 brew install --cask powershell
+brew install --cask postman
 
 # Communication Apps
 brew install --cask slack
