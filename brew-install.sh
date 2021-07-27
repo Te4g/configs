@@ -40,6 +40,9 @@ brew install --cask notion
 brew install --cask syncthing
 brew install --cask cakebrew
 
+# Utils
+brew install coreutils
+
 # Miscellenaous
 brew install --cask amazon-music
 
