@@ -42,6 +42,7 @@ brew install --cask cakebrew
 
 # Utils
 brew install coreutils
+brew install jq
 
 # Miscellenaous
 brew install --cask amazon-music
