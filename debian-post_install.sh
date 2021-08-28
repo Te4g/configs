@@ -2,7 +2,7 @@
 sudo apt install \
   snapd
 
-echo 'PATH="$PATH:/snap/bin"' >> ~/.profile ## reboot is required for it to be applied 'source ~/.profile' can temporarily do the trick
+echo 'PATH="$PATH:/snap/bin"' >> ~/.bashrc
 
 sudo snap install \
   phpstorm --classic \
