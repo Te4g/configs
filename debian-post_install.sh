@@ -44,5 +44,6 @@ ${SUDO} mv composer.phar /usr/local/bin/composer
 ###> GO RELATED ###
 wget https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz
 ${SUDO} tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz
+rm go${GO_VERSION}.linux-amd64.tar.gz
 echo 'PATH="$PATH:/usr/local/go/bin"' >> ~/.bashrc
 ###< GO RELATED ###
