@@ -1,6 +1,7 @@
 #!/bin/bash
 DOCKER_COMPOSE_VERSION="1.29.2"
 PHP_VERSION="8.1"
+GO_VERSION="1.17"
 
 if [ "$(whoami)" != "root" ]; then
     SUDO=sudo
@@ -39,3 +40,9 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ${SUDO} mv composer.phar /usr/local/bin/composer
 ###< COMPOSER RELATED ###
+
+###> GO RELATED ###
+wget https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz
+${SUDO} tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz
+echo 'PATH="$PATH:/usr/local/go/bin"' >> ~/.bashrc
+###< GO RELATED ###
