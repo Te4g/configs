@@ -49,7 +49,7 @@ brew install --cask amazon-music
 
 # Ffmpeg
 brew tap homebrew-ffmpeg/ffmpeg
-brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-librsvg --with-openjpeg --with-libvmaf
+brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-librsvg --with-openjpeg --with-libvmaf --with-zeromq
 
 # Custom shell
 npm install --global pure-prompt
