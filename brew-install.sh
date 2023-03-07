@@ -19,12 +19,15 @@ brew install node
 brew install yarn
 brew install httpie
 brew install serverless
+brew install helm
 brew install --cask docker
 brew install --cask vagrant
 brew install --cask phpstorm
 brew install --cask datagrip
 brew install --cask powershell
 brew install --cask postman
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
 
 # Communication Apps
 brew install --cask slack
