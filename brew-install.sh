@@ -28,6 +28,7 @@ brew install --cask powershell
 brew install --cask postman
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
+brew install gh
 
 # Communication Apps
 brew install --cask slack
