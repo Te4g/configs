@@ -29,6 +29,7 @@ brew install --cask postman
 brew tap hashicorp/tap
 brew install hashicorp/tap/terraform
 brew install gh
+brew install ansible
 
 # Communication Apps
 brew install --cask slack
