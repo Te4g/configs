@@ -41,6 +41,10 @@ ex ()
     echo "'$1' invalid file"
   fi
 }
+
+mkcd(){
+    mkdir $1 && cd $1
+}
 ##### FUNCTIONS #####
 
 #### ALIAS COMMANDE SYS ####
