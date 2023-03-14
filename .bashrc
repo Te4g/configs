@@ -54,6 +54,10 @@ alias ll="ls -la"
 alias lh="ls -lh"
 alias la="ls -a"
 alias igrep="grep -i"
+alias du='du -sh'
+alias dusort='du -sh * | sort -hr'
+alias mv='mv -i'
+alias cp='cp -i'
 #### ALIAS COMMANDE SYS ####
 
 
