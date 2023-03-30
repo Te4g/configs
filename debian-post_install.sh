@@ -47,3 +47,7 @@ ${SUDO} tar -C /usr/local -xzf go${GO_VERSION}.linux-amd64.tar.gz
 rm go${GO_VERSION}.linux-amd64.tar.gz
 echo 'PATH="$PATH:/usr/local/go/bin"' >> ~/.bashrc
 ###< GO RELATED ###
+
+###> SYSTEM RELATED ###
+${SUDO} apt install bat
+###< SYSTEM RELATED ###
