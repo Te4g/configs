@@ -31,6 +31,7 @@ brew install hashicorp/tap/terraform
 brew install gh
 brew install ansible
 brew install bat
+brew install tlrc
 
 # Communication Apps
 brew install --cask slack
